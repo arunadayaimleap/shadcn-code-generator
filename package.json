@@ -4,8 +4,10 @@
   "description": "AI-powered code generation tool with support for multiple languages",
   "main": "index.js",
   "scripts": {
-    "start": "cd backend && node server.js",
-    "start:frontend": "cd frontend && http-server -p 8080",
+    "start": "node start.js",
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd frontend && node server.js",
+    "setup": "node setup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

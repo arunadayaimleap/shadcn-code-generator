@@ -3,7 +3,34 @@
 ![Version](https://img.shields.io/badge/version-1.3.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-CodeForge AI is a powerful code generation tool that utilizes OpenAI's GPT models to create high-quality, production-ready code across 50+ programming languages. This application features a user-friendly interface and advanced AI capabilities to help developers accelerate their coding workflow.
+CodeForge AI is a powerful code generation tool that utilizes OpenAI's GPT models to create high-quality, production-ready code across 50+ programming languages.
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/shadcn-code-generator.git
+cd shadcn-code-generator
+
+# Set up your OpenAI API key in backend/.env
+echo "OPENAI_API_KEY=your_api_key_here" > backend/.env
+echo "PORT=5000" >> backend/.env
+echo "CORS_ORIGIN=http://localhost:8080" >> backend/.env
+
+# Install all dependencies
+node setup.js
+
+# Start the application
+npm start
+
+# Access the app at http://localhost:8080
+```
+
+## 📋 Requirements
+
+- Node.js 14.x or higher
+- NPM
+- OpenAI API key
 
 ## 🚀 Features
 
@@ -30,34 +57,30 @@ CodeForge AI is a powerful code generation tool that utilizes OpenAI's GPT model
    cd shadcn-code-generator
    ```
 
-2. **Set up the backend**
-   ```bash
-   cd backend
-   npm install
-   ```
-
-3. **Configure environment variables**
+2. **Set up environment variables**
    Create a `.env` file in the backend directory with your OpenAI API key:
    ```
    OPENAI_API_KEY=your_api_key_here
    PORT=5000
-   CORS_ORIGIN=http://localhost
+   CORS_ORIGIN=http://localhost:8080
    ```
 
-4. **Start the backend server**
+3. **Install dependencies**
+   Run the setup script to install all required dependencies:
+   ```bash
+   node setup.js
+   ```
+   
+   This will install dependencies for both the root project and the backend.
+
+4. **Start the application**
    ```bash
    npm start
    ```
+   
+   This command will start both the frontend and backend servers simultaneously.
 
-5. **Set up the frontend**
-   Open a new terminal window:
-   ```bash
-   cd ../frontend
-   # If using a simple HTTP server like http-server:
-   npx http-server -p 8080
-   ```
-
-6. **Access the application**
+5. **Access the application**
    Open your browser and navigate to:
    ```
    http://localhost:8080

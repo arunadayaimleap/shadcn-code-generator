@@ -1,0 +1,13 @@
+{
+  "name": "shadcn-code-generator-frontend",
+  "version": "1.3.0",
+  "description": "Frontend for the CodeForge AI code generator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "license": "MIT"
+}
